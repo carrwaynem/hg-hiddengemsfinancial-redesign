@@ -201,92 +201,46 @@
     </div>
 
     <div class="burst-stage">
-      <!-- SVG: beams + animated bill particles -->
-      <svg class="burst-svg" viewBox="0 0 1000 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <filter id="beamGlow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          <linearGradient id="bg1" x1="500" y1="250" x2="130" y2="90"  gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-          <linearGradient id="bg2" x1="500" y1="250" x2="870" y2="90"  gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-          <linearGradient id="bg3" x1="500" y1="250" x2="70"  y2="250" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-          <linearGradient id="bg4" x1="500" y1="250" x2="930" y2="250" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-          <linearGradient id="bg5" x1="500" y1="250" x2="130" y2="410" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-          <linearGradient id="bg6" x1="500" y1="250" x2="870" y2="410" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#d4a017" stop-opacity="0.9"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0.08"/></linearGradient>
-        </defs>
-        <!-- Beams -->
-        <line x1="500" y1="250" x2="130" y2="90"  stroke="url(#bg1)" stroke-width="2" filter="url(#beamGlow)"/>
-        <line x1="500" y1="250" x2="870" y2="90"  stroke="url(#bg2)" stroke-width="2" filter="url(#beamGlow)"/>
-        <line x1="500" y1="250" x2="70"  y2="250" stroke="url(#bg3)" stroke-width="2" filter="url(#beamGlow)"/>
-        <line x1="500" y1="250" x2="930" y2="250" stroke="url(#bg4)" stroke-width="2" filter="url(#beamGlow)"/>
-        <line x1="500" y1="250" x2="130" y2="410" stroke="url(#bg5)" stroke-width="2" filter="url(#beamGlow)"/>
-        <line x1="500" y1="250" x2="870" y2="410" stroke="url(#bg6)" stroke-width="2" filter="url(#beamGlow)"/>
-        <!-- Bill particles — beam 1 (upper-left) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><line x1="-5" y1="0" x2="5" y2="0" stroke="#4aaa4a" stroke-width="0.8" opacity="0.5"/><animateMotion path="M 500 250 L 197 119" dur="2s" repeatCount="indefinite" begin="0s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><line x1="-5" y1="0" x2="5" y2="0" stroke="#4aaa4a" stroke-width="0.8" opacity="0.5"/><animateMotion path="M 500 250 L 197 119" dur="2s" repeatCount="indefinite" begin="0.65s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.65s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><line x1="-5" y1="0" x2="5" y2="0" stroke="#4aaa4a" stroke-width="0.8" opacity="0.5"/><animateMotion path="M 500 250 L 197 119" dur="2s" repeatCount="indefinite" begin="1.3s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.3s"/></g>
-        <!-- Bill particles — beam 2 (upper-right) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 119" dur="2s" repeatCount="indefinite" begin="0.2s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.2s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 119" dur="2s" repeatCount="indefinite" begin="0.85s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.85s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 119" dur="2s" repeatCount="indefinite" begin="1.5s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.5s"/></g>
-        <!-- Bill particles — beam 3 (middle-left) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 140 250" dur="2s" repeatCount="indefinite" begin="0.4s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.4s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 140 250" dur="2s" repeatCount="indefinite" begin="1.05s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.05s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 140 250" dur="2s" repeatCount="indefinite" begin="1.7s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.7s"/></g>
-        <!-- Bill particles — beam 4 (middle-right) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 860 250" dur="2s" repeatCount="indefinite" begin="0.1s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.1s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 860 250" dur="2s" repeatCount="indefinite" begin="0.75s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.75s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 860 250" dur="2s" repeatCount="indefinite" begin="1.4s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.4s"/></g>
-        <!-- Bill particles — beam 5 (lower-left) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 197 381" dur="2s" repeatCount="indefinite" begin="0.3s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.3s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 197 381" dur="2s" repeatCount="indefinite" begin="0.95s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.95s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 197 381" dur="2s" repeatCount="indefinite" begin="1.6s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.6s"/></g>
-        <!-- Bill particles — beam 6 (lower-right) -->
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 381" dur="2s" repeatCount="indefinite" begin="0.5s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="0.5s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 381" dur="2s" repeatCount="indefinite" begin="1.15s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.15s"/></g>
-        <g><rect x="-13" y="-6" width="26" height="12" rx="2" fill="#2d7040"/><animateMotion path="M 500 250 L 803 381" dur="2s" repeatCount="indefinite" begin="1.8s" rotate="auto"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1" dur="2s" repeatCount="indefinite" begin="1.8s"/></g>
-      </svg>
+      <img src="img/ibc-burst.jpg" class="burst-bg" alt="IBC policy funds wealth growth, education, vacation, business, vehicles, and real estate" />
 
-      <!-- Central open vault door -->
-      <div class="burst-vault-center">
+      <!-- Vault overlaid on the $100 bill -->
+      <div class="burst-vault-overlay">
         <svg class="burst-vault-svg" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <radialGradient id="vi" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe44d" stop-opacity="0.95"/><stop offset="55%" stop-color="#d4a017" stop-opacity="0.55"/><stop offset="100%" stop-color="#7a5000" stop-opacity="0"/></radialGradient>
-            <radialGradient id="vo" cx="50%" cy="50%" r="50%"><stop offset="30%" stop-color="#d4a017" stop-opacity="0.25"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0"/></radialGradient>
+            <radialGradient id="vi2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe44d" stop-opacity="0.95"/><stop offset="55%" stop-color="#d4a017" stop-opacity="0.55"/><stop offset="100%" stop-color="#7a5000" stop-opacity="0"/></radialGradient>
+            <radialGradient id="vo2" cx="50%" cy="50%" r="50%"><stop offset="20%" stop-color="#d4a017" stop-opacity="0.3"/><stop offset="100%" stop-color="#d4a017" stop-opacity="0"/></radialGradient>
           </defs>
-          <circle cx="70" cy="70" r="70" fill="url(#vo)"/>
-          <circle cx="70" cy="70" r="62" fill="#08111c" stroke="#d4a017" stroke-width="2.5"/>
-          <circle cx="70" cy="70" r="49" fill="url(#vi)"/>
-          <circle cx="70"  cy="8"   r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="114" cy="26"  r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="132" cy="70"  r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="114" cy="114" r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="70"  cy="132" r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="26"  cy="114" r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="8"   cy="70"  r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <circle cx="26"  cy="26"  r="5" fill="#08111c" stroke="#d4a017" stroke-width="1.5"/>
-          <!-- Open door panel (arc from 7 o'clock to 11 o'clock up the left side) -->
+          <circle cx="70" cy="70" r="70" fill="url(#vo2)"/>
+          <circle cx="70" cy="70" r="62" fill="#05080f" stroke="#d4a017" stroke-width="2.5"/>
+          <circle cx="70" cy="70" r="49" fill="url(#vi2)"/>
+          <circle cx="70"  cy="8"   r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="114" cy="26"  r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="132" cy="70"  r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="114" cy="114" r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="70"  cy="132" r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="26"  cy="114" r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="8"   cy="70"  r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
+          <circle cx="26"  cy="26"  r="5" fill="#05080f" stroke="#d4a017" stroke-width="1.5"/>
           <path d="M 28 95 A 49 49 0 0 0 46 28" stroke="#5a3d00" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <path d="M 28 95 A 49 49 0 0 0 46 28" stroke="#d4a017" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+          <path d="M 28 95 A 49 49 0 0 0 46 28" stroke="#d4a017" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
           <circle cx="21" cy="70" r="5" fill="#d4a017" opacity="0.9"/>
-          <!-- Light rays -->
-          <line x1="70" y1="70" x2="70"  y2="22"  stroke="#ffe44d" stroke-width="1.5" opacity="0.45"/>
-          <line x1="70" y1="70" x2="109" y2="31"  stroke="#ffe44d" stroke-width="1.5" opacity="0.35"/>
-          <line x1="70" y1="70" x2="119" y2="70"  stroke="#ffe44d" stroke-width="1.5" opacity="0.45"/>
-          <line x1="70" y1="70" x2="109" y2="109" stroke="#ffe44d" stroke-width="1.5" opacity="0.35"/>
-          <line x1="70" y1="70" x2="70"  y2="119" stroke="#ffe44d" stroke-width="1.5" opacity="0.45"/>
-          <line x1="70" y1="70" x2="31"  y2="109" stroke="#ffe44d" stroke-width="1.5" opacity="0.25"/>
+          <line x1="70" y1="70" x2="70"  y2="22"  stroke="#ffe44d" stroke-width="1.5" opacity="0.5"/>
+          <line x1="70" y1="70" x2="109" y2="31"  stroke="#ffe44d" stroke-width="1.5" opacity="0.4"/>
+          <line x1="70" y1="70" x2="119" y2="70"  stroke="#ffe44d" stroke-width="1.5" opacity="0.5"/>
+          <line x1="70" y1="70" x2="109" y2="109" stroke="#ffe44d" stroke-width="1.5" opacity="0.4"/>
+          <line x1="70" y1="70" x2="70"  y2="119" stroke="#ffe44d" stroke-width="1.5" opacity="0.5"/>
+          <line x1="70" y1="70" x2="31"  y2="109" stroke="#ffe44d" stroke-width="1.5" opacity="0.3"/>
         </svg>
         <p class="burst-vault-label">Your IBC Policy</p>
       </div>
 
-      <!-- 6 photo nodes -->
-      <div class="burst-nodes">
-        <div class="burst-node bn-1"><div class="burst-circle"><span class="burst-emoji">🌱</span></div><span class="burst-label">Wealth Growth</span></div>
-        <div class="burst-node bn-2"><div class="burst-circle"><span class="burst-emoji">🎓</span></div><span class="burst-label">College &amp; Education</span></div>
-        <div class="burst-node bn-3"><div class="burst-circle"><span class="burst-emoji">🌴</span></div><span class="burst-label">Vacation &amp; Lifestyle</span></div>
-        <div class="burst-node bn-4"><div class="burst-circle"><span class="burst-emoji">🏢</span></div><span class="burst-label">Business Capital</span></div>
-        <div class="burst-node bn-5"><div class="burst-circle"><span class="burst-emoji">🚗</span></div><span class="burst-label">Vehicle Financing</span></div>
-        <div class="burst-node bn-6"><div class="burst-circle"><span class="burst-emoji">🏠</span></div><span class="burst-label">Home &amp; Real Estate</span></div>
-      </div>
+      <!-- Labels on each circle -->
+      <span class="burst-tag bt-1">Wealth Growth</span>
+      <span class="burst-tag bt-2">College &amp; Education</span>
+      <span class="burst-tag bt-3">Vacation &amp; Lifestyle</span>
+      <span class="burst-tag bt-4">Business Capital</span>
+      <span class="burst-tag bt-5">Vehicle Financing</span>
+      <span class="burst-tag bt-6">Home &amp; Real Estate</span>
     </div>
   </section>
 

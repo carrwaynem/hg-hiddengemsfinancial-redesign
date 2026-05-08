@@ -1268,46 +1268,50 @@ ul { list-style: none; }
 /* ============================================================
    IBC BURST SECTION
    ============================================================ */
-.burst-section {
-  overflow: hidden;
-  background-image:
-    linear-gradient(rgba(125,167,194,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(125,167,194,0.035) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
+.burst-section { overflow: hidden; }
 .burst-section .section-sub { margin: 0 auto; }
 
 .burst-stage {
   position: relative;
   max-width: 1100px;
-  height: 500px;
-  margin: 56px auto 0;
-  padding: 0 20px;
+  margin: 48px auto 0;
+  padding: 0 28px;
 }
 
-.burst-svg {
-  position: absolute;
-  inset: 0;
+.burst-bg {
   width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
+  display: block;
+  border-radius: var(--radius-lg);
 }
 
-.burst-vault-center {
+/* Vault overlaid on the $100 bill center */
+.burst-vault-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 3;
+  z-index: 2;
+}
+
+.burst-vault-overlay::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 230px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, rgba(5,8,18,0.92) 50%, transparent 100%);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .burst-vault-svg {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   display: block;
-  filter: drop-shadow(0 0 28px rgba(212,160,23,0.55));
+  filter: drop-shadow(0 0 32px rgba(212,160,23,0.65));
 }
 
 .burst-vault-label {
@@ -1317,68 +1321,36 @@ ul { list-style: none; }
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #d4a017;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
-.burst-nodes { display: contents; }
-
-.burst-node {
+/* Circle labels */
+.burst-tag {
   position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-}
-
-.burst-circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 2.5px solid #d4a017;
-  box-shadow: 0 0 0 1px rgba(212,160,23,0.15), 0 0 28px rgba(212,160,23,0.28), inset 0 0 18px rgba(212,160,23,0.06);
-  overflow: hidden;
-  background: radial-gradient(circle at 40% 35%, #1c2c40, #08101c);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition);
-  cursor: default;
-}
-
-.burst-circle:hover {
-  box-shadow: 0 0 0 2px rgba(212,160,23,0.45), 0 0 40px rgba(212,160,23,0.42);
-  transform: scale(1.06);
-}
-
-.burst-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.burst-emoji {
-  font-size: 48px;
-  line-height: 1;
-  display: block;
-}
-
-.burst-label {
-  display: block;
-  margin-top: 10px;
+  transform: translateX(-50%);
+  background: rgba(5, 8, 18, 0.78);
+  border: 1px solid rgba(212,160,23,0.5);
+  color: rgba(255,255,255,0.94);
   font-family: var(--font-head);
-  font-size: 11.5px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.62);
-  letter-spacing: 0.3px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 100px;
   white-space: nowrap;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 3;
+  pointer-events: none;
 }
 
-.bn-1 { left: 13%; top: 18%; }
-.bn-2 { left: 87%; top: 18%; }
-.bn-3 { left:  7%; top: 50%; }
-.bn-4 { left: 93%; top: 50%; }
-.bn-5 { left: 13%; top: 82%; }
-.bn-6 { left: 87%; top: 82%; }
+/* Positions tuned to each circle in the image */
+.bt-1 { left: 17%; top: 42%; }   /* Wealth Growth    — below tree circle     */
+.bt-2 { left: 80%; top: 40%; }   /* College          — below college circle  */
+.bt-3 { left: 12%; top: 68%; }   /* Vacation         — below beach circle    */
+.bt-4 { left: 85%; top: 68%; }   /* Business Capital — below city circle     */
+.bt-5 { left: 22%; top: 87%; }   /* Vehicle          — below car circle      */
+.bt-6 { left: 76%; top: 87%; }   /* Real Estate      — below house circle    */
 
 /* ============================================================
    RESPONSIVE
@@ -1408,35 +1380,10 @@ ul { list-style: none; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .cta-section { padding: 80px 0; }
 
-  .burst-stage {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px 48px;
-  }
-  .burst-svg { display: none; }
-  .burst-vault-center {
-    position: static;
-    transform: none;
-    margin: 0 auto 40px;
-  }
-  .burst-nodes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-  }
-  .burst-node {
-    position: static;
-    transform: none;
-    width: calc(50% - 24px);
-    max-width: 160px;
-  }
-  .burst-circle { width: 110px; height: 110px; }
-  .burst-emoji { font-size: 40px; }
-  .burst-label { font-size: 11px; white-space: normal; }
+  .burst-stage { padding: 0 12px; }
+  .burst-vault-svg { width: 140px; height: 140px; }
+  .burst-vault-label { display: none; }
+  .burst-tag { font-size: 10px; padding: 4px 10px; letter-spacing: 0.2px; }
 }
 
 @media (max-width: 480px) {
