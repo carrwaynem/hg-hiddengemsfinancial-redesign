@@ -1285,33 +1285,6 @@ ul { list-style: none; }
 }
 
 
-/* Circle labels — sit inside the bottom of each photo circle */
-.burst-tag {
-  position: absolute;
-  transform: translateX(-50%);
-  background: rgba(4, 6, 14, 0.86);
-  border: 1px solid rgba(212,160,23,0.6);
-  color: #fff;
-  font-family: var(--font-head);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  padding: 7px 16px;
-  border-radius: 100px;
-  white-space: nowrap;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 3;
-  pointer-events: none;
-}
-
-/* Positioned inside the bottom portion of each circle */
-.bt-1 { left: 16%; top: 32%; }   /* Wealth Growth     — tree, bottom-inside    */
-.bt-2 { left: 80%; top: 29%; }   /* College           — college, bottom-inside */
-.bt-3 { left: 12%; top: 58%; }   /* Vacation          — beach, bottom-inside   */
-.bt-4 { left: 85%; top: 57%; }   /* Business Capital  — city, bottom-inside    */
-.bt-5 { left: 22%; top: 86%; }   /* Vehicle           — car, bottom-inside     */
-.bt-6 { left: 76%; top: 87%; }   /* Real Estate       — house, bottom-inside   */
 
 /* ============================================================
    RESPONSIVE
@@ -1342,7 +1315,6 @@ ul { list-style: none; }
   .cta-section { padding: 80px 0; }
 
   .burst-stage { padding: 0 12px; }
-  .burst-tag { font-size: 10px; padding: 4px 10px; letter-spacing: 0.2px; }
 }
 
 @media (max-width: 480px) {
