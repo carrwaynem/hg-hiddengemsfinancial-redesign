@@ -1299,11 +1299,12 @@ ul { list-style: none; }
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 230px;
-  height: 150px;
+  width: 270px;
+  height: 160px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(ellipse, rgba(5,8,18,0.92) 50%, transparent 100%);
-  border-radius: 50%;
+  background: #04060e;
+  border-radius: 14px;
+  box-shadow: 0 0 28px 22px #04060e;
   z-index: -1;
 }
 
@@ -1324,33 +1325,33 @@ ul { list-style: none; }
   margin-top: 8px;
 }
 
-/* Circle labels */
+/* Circle labels — sit inside the bottom of each photo circle */
 .burst-tag {
   position: absolute;
   transform: translateX(-50%);
-  background: rgba(5, 8, 18, 0.78);
-  border: 1px solid rgba(212,160,23,0.5);
-  color: rgba(255,255,255,0.94);
+  background: rgba(4, 6, 14, 0.86);
+  border: 1px solid rgba(212,160,23,0.6);
+  color: #fff;
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 6px 14px;
+  letter-spacing: 0.4px;
+  padding: 7px 16px;
   border-radius: 100px;
   white-space: nowrap;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 3;
   pointer-events: none;
 }
 
-/* Positions tuned to each circle in the image */
-.bt-1 { left: 17%; top: 42%; }   /* Wealth Growth    — below tree circle     */
-.bt-2 { left: 80%; top: 40%; }   /* College          — below college circle  */
-.bt-3 { left: 12%; top: 68%; }   /* Vacation         — below beach circle    */
-.bt-4 { left: 85%; top: 68%; }   /* Business Capital — below city circle     */
-.bt-5 { left: 22%; top: 87%; }   /* Vehicle          — below car circle      */
-.bt-6 { left: 76%; top: 87%; }   /* Real Estate      — below house circle    */
+/* Positioned inside the bottom portion of each circle */
+.bt-1 { left: 16%; top: 32%; }   /* Wealth Growth     — tree, bottom-inside    */
+.bt-2 { left: 80%; top: 29%; }   /* College           — college, bottom-inside */
+.bt-3 { left: 12%; top: 58%; }   /* Vacation          — beach, bottom-inside   */
+.bt-4 { left: 85%; top: 57%; }   /* Business Capital  — city, bottom-inside    */
+.bt-5 { left: 22%; top: 86%; }   /* Vehicle           — car, bottom-inside     */
+.bt-6 { left: 76%; top: 87%; }   /* Real Estate       — house, bottom-inside   */
 
 /* ============================================================
    RESPONSIVE
