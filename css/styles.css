@@ -1266,6 +1266,120 @@ ul { list-style: none; }
 .blog-read-more::after { content: '→'; }
 
 /* ============================================================
+   IBC VAULT SECTION
+   ============================================================ */
+.vault-section { overflow: visible; }
+.vault-section .section-sub { margin: 0 auto; }
+
+.vault-stage {
+  position: relative;
+  max-width: 1060px;
+  height: 560px;
+  margin: 56px auto 0;
+  padding: 0 28px;
+}
+
+.vault-pill-cloud { display: contents; }
+
+.vault-door-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.vault-svg {
+  width: 280px;
+  height: 280px;
+  display: block;
+  filter: drop-shadow(0 0 40px rgba(125, 167, 194, 0.22));
+}
+
+.vault-dial {
+  animation: dialSpin 20s linear infinite;
+  transform-origin: 150px 150px;
+}
+
+@keyframes dialSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.vault-center-label {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 16px;
+}
+
+.vault-pill {
+  position: absolute;
+  background: rgba(125, 167, 194, 0.07);
+  border: 1px solid rgba(125, 167, 194, 0.26);
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  transition: all var(--transition);
+  cursor: default;
+  opacity: 0;
+  animation: vaultPillIn 0.5s ease forwards;
+}
+
+.vault-pill.vp-hi {
+  background: rgba(55, 202, 55, 0.07);
+  border-color: rgba(55, 202, 55, 0.3);
+}
+
+.vault-pill:hover {
+  background: rgba(125, 167, 194, 0.16);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 0 24px rgba(125, 167, 194, 0.18);
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.vault-pill.vp-hi:hover {
+  background: rgba(55, 202, 55, 0.12);
+  border-color: var(--accent);
+  box-shadow: 0 0 24px rgba(55, 202, 55, 0.15);
+}
+
+@keyframes vaultPillIn {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 10px)); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@keyframes vaultPillInMobile {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.vp-1  { left: 18%; top: 10%; animation-delay: 0.08s; }
+.vp-2  { left: 50%; top:  7%; animation-delay: 0.14s; }
+.vp-3  { left: 82%; top: 10%; animation-delay: 0.08s; }
+.vp-4  { left: 11%; top: 30%; animation-delay: 0.18s; }
+.vp-5  { left:  7%; top: 52%; animation-delay: 0.22s; }
+.vp-6  { left: 13%; top: 74%; animation-delay: 0.28s; }
+.vp-7  { left: 88%; top: 28%; animation-delay: 0.18s; }
+.vp-8  { left: 91%; top: 50%; animation-delay: 0.22s; }
+.vp-9  { left: 86%; top: 73%; animation-delay: 0.28s; }
+.vp-10 { left: 19%; top: 90%; animation-delay: 0.32s; }
+.vp-11 { left: 50%; top: 93%; animation-delay: 0.36s; }
+.vp-12 { left: 80%; top: 90%; animation-delay: 0.32s; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
@@ -1292,6 +1406,34 @@ ul { list-style: none; }
   .blog-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .cta-section { padding: 80px 0; }
+
+  .vault-stage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 48px;
+  }
+  .vault-door-wrap {
+    position: static;
+    transform: none;
+    margin-bottom: 36px;
+  }
+  .vault-svg { width: 220px; height: 220px; }
+  .vault-pill-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .vault-pill {
+    position: static;
+    transform: none;
+    animation: vaultPillInMobile 0.5s ease forwards;
+    opacity: 0;
+  }
+  .vault-pill:hover { transform: scale(1.04); }
+  .vault-pill.vp-hi:hover { transform: scale(1.04); }
 }
 
 @media (max-width: 480px) {
