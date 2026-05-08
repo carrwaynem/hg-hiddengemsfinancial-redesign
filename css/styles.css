@@ -1284,46 +1284,6 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
 }
 
-/* Vault overlaid on the $100 bill center */
-.burst-vault-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-}
-
-.burst-vault-overlay::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 270px;
-  height: 160px;
-  transform: translate(-50%, -50%);
-  background: #04060e;
-  border-radius: 14px;
-  box-shadow: 0 0 28px 22px #04060e;
-  z-index: -1;
-}
-
-.burst-vault-svg {
-  width: 200px;
-  height: 200px;
-  display: block;
-  filter: drop-shadow(0 0 32px rgba(212,160,23,0.65));
-}
-
-.burst-vault-label {
-  font-family: var(--font-head);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #d4a017;
-  margin-top: 8px;
-}
 
 /* Circle labels — sit inside the bottom of each photo circle */
 .burst-tag {
@@ -1382,8 +1342,6 @@ ul { list-style: none; }
   .cta-section { padding: 80px 0; }
 
   .burst-stage { padding: 0 12px; }
-  .burst-vault-svg { width: 140px; height: 140px; }
-  .burst-vault-label { display: none; }
   .burst-tag { font-size: 10px; padding: 4px 10px; letter-spacing: 0.2px; }
 }
 
