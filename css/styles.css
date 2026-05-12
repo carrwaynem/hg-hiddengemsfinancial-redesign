@@ -1077,6 +1077,9 @@ ul { list-style: none; }
   grid-template-columns: 1fr 1fr;
   gap: 72px;
   align-items: center;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 48px;
 }
 .svc-detail:nth-child(even) .svc-detail-inner { direction: rtl; }
 .svc-detail:nth-child(even) .svc-detail-inner > * { direction: ltr; }
