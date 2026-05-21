@@ -1326,3 +1326,23 @@ ul { list-style: none; }
   .cta-actions { flex-direction: column; align-items: center; }
   .hero-proof { flex-wrap: wrap; gap: 20px; }
 }
+
+
+/* === Home page spacing calibration (Cowork) — scoped to body.home (home page only) === */
+body.home .hero { min-height: auto; align-items: flex-start; }
+
+body.home .section:has(img) { padding-top: 32px; padding-bottom: 32px; }
+body.home .burst-stage { margin-top: 24px; }
+
+@media (min-width: 1025px) {
+  body.home .nav-inner,
+  body.home .hero-inner,
+  body.home .container { max-width: 1440px; }
+
+  body.home .section    { padding-top: 48px; padding-bottom: 48px; }
+  body.home .hero-inner { padding-top: 44px; padding-bottom: 44px; }
+
+  body.home .about-split { align-items: stretch; }
+  body.home .about-img { aspect-ratio: auto !important; height: 100% !important; width: 100% !important; }
+  body.home .about-img img { height: 100% !important; width: 100% !important; object-fit: cover; }
+}
