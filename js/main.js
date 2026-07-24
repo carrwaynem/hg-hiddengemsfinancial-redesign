@@ -55,6 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Use case tabs ---
+  document.querySelectorAll('.usecase-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      document.querySelectorAll('.usecase-tab-btn').forEach(b => {
+        b.classList.toggle('active', b === btn);
+        b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+      });
+      document.querySelectorAll('.usecase-panel').forEach(p => {
+        p.classList.toggle('active', p.dataset.panel === tab);
+      });
+    });
+  });
+
   // --- Scroll: nav border strengthens ---
   const nav = document.querySelector('.nav');
   if (nav) {
