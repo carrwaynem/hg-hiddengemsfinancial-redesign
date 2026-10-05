@@ -146,6 +146,25 @@
     </div>
   </footer>
 
+  <!-- LEAD POPUP -->
+  <div class="lead-modal" id="leadModal" hidden role="dialog" aria-modal="true" aria-labelledby="leadTitle">
+    <div class="lead-modal-card">
+      <button type="button" class="lead-close" aria-label="Close" data-lead-close>&times;</button>
+      <img class="lead-modal-thumb" src="img/lead-magnet-own-bank.png" alt="How To Be Your Own Bank guide" loading="lazy" />
+      <span class="eyebrow">Free Guide</span>
+      <h3 id="leadTitle" class="lead-title">Your Money Should Work While You Live</h3>
+      <p class="lead-body">Join the list for financial literacy and benefits you can use for life, not just a death benefit. Start with How To Be Your Own Bank.</p>
+      <form class="lead-form" id="leadForm" data-endpoint="">
+        <label class="visually-hidden" for="leadEmail">Email address</label>
+        <input id="leadEmail" name="email" type="email" required placeholder="Your email address" autocomplete="email" />
+        <button type="submit" class="btn btn-primary">Join the List</button>
+      </form>
+      <p class="lead-status" id="leadStatus" role="status"></p>
+      <p class="lead-fine">No pitch. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script src="js/lead-popup.js"></script>
 </body>
 </html>

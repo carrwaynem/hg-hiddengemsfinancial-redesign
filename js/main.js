@@ -1,5 +1,5 @@
 // ============================================================
-// HIDDEN GEMS FINANCIAL — main.js
+// HIDDEN GEMS FINANCIAL: main.js
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {

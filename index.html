@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hidden Gems Financial | Bespoke Financial Strategy</title>
+  <title>Hidden Gems Financial | Bespoke Financial Architect</title>
   <meta name="description" content="Custom financial strategies anchored in Infinite Banking. Wealth building, trust structures, and tax mitigation designed around your life." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -77,7 +77,7 @@
       <div class="hero-left">
         <div class="hero-badge">
           <span class="hero-badge-dot" aria-hidden="true"></span>
-          Bespoke Financial Strategy
+          Bespoke Financial Architect
         </div>
         <h1 class="hero-title">
           Your Money.
@@ -85,11 +85,18 @@
           Built Around Your Life.
         </h1>
         <p class="hero-desc">
-          We do not sell products. We design custom financial strategies anchored in Infinite Banking that maximize your cash flow, grow your wealth tax free, and protect what you have built for generations to come.
+          We do not sell products. We design custom financial strategies that focus on the efficiency of your entire financial eco-system including cash flow, asset protection and tax mitigation.
         </p>
+        <div class="vsl">
+          <div class="vsl-inner">
+            <span class="vsl-play" aria-hidden="true">&#9654;</span>
+            <span class="vsl-label">Video overview coming soon</span>
+          </div>
+        </div>
+        <p class="vsl-caption">A short overview of how a strategy gets built around your cash flow, goals, and timeline.</p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary btn-lg">Book a Strategy Call</a>
-          <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+          <a href="services.html#ibc" class="btn btn-outline btn-lg">How Does It Work</a>
         </div>
         <div class="hero-proof">
           <div class="hero-proof-item">
@@ -103,7 +110,7 @@
         </div>
       </div>
 
-      <div class="hero-right" aria-hidden="true">
+      <div class="hero-right">
         <div class="scenario-card">
           <div class="scenario-icon"><svg class="icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></div>
           <div>
@@ -133,6 +140,18 @@
           </div>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- LEAD MAGNET -->
+  <section class="section section--light lead-feature">
+    <div class="container tc">
+      <span class="eyebrow">Start Here</span>
+      <h2 class="section-title">How To Be Your Own Bank</h2>
+      <p class="section-sub">Six steps to make your money grow, use it when you need it, and stay in control.</p>
+      <img class="lead-magnet-img" src="img/lead-magnet-own-bank.png" alt="How To Be Your Own Bank: a six step overview of Infinite Banking" loading="lazy" />
+      <button type="button" class="btn btn-primary btn-lg" data-open-lead>Get the Free Guide</button>
     </div>
   </section>
 
@@ -233,7 +252,7 @@
           <div class="step-num">2</div>
           <div class="step-line" aria-hidden="true"></div>
           <div class="step-body">
-            <h3 class="step-title">Discovery Call — Full Cash Flow Mapping</h3>
+            <h3 class="step-title">Discovery Call: Full Cash Flow Mapping</h3>
             <p class="step-desc">We map how money comes in, where it goes, and what it could be doing. We revisit the Infinite Banking concept in the context of your actual situation and cast a vision for what the strategy looks like.</p>
           </div>
         </div>
@@ -257,7 +276,7 @@
           <div class="step-num">5</div>
           <div class="step-body">
             <h3 class="step-title">Ongoing Relationship</h3>
-            <p class="step-desc">Access to Wayne does not end at issuance. As your financial picture evolves — income changes, family grows, business scales — the strategy evolves with it. You are not a closed file. You are a client.</p>
+            <p class="step-desc">Access to Wayne does not end at issuance. As your financial picture evolves: income changes, family grows, business scales, and the strategy evolves with it. You are not a closed file. You are a client.</p>
           </div>
         </div>
       </div>
@@ -461,6 +480,25 @@
     </div>
   </footer>
 
+  <!-- LEAD POPUP -->
+  <div class="lead-modal" id="leadModal" hidden role="dialog" aria-modal="true" aria-labelledby="leadTitle">
+    <div class="lead-modal-card">
+      <button type="button" class="lead-close" aria-label="Close" data-lead-close>&times;</button>
+      <img class="lead-modal-thumb" src="img/lead-magnet-own-bank.png" alt="How To Be Your Own Bank guide" loading="lazy" />
+      <span class="eyebrow">Free Guide</span>
+      <h3 id="leadTitle" class="lead-title">Your Money Should Work While You Live</h3>
+      <p class="lead-body">Join the list for financial literacy and benefits you can use for life, not just a death benefit. Start with How To Be Your Own Bank.</p>
+      <form class="lead-form" id="leadForm" data-endpoint="">
+        <label class="visually-hidden" for="leadEmail">Email address</label>
+        <input id="leadEmail" name="email" type="email" required placeholder="Your email address" autocomplete="email" />
+        <button type="submit" class="btn btn-primary">Join the List</button>
+      </form>
+      <p class="lead-status" id="leadStatus" role="status"></p>
+      <p class="lead-fine">No pitch. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script src="js/lead-popup.js"></script>
 </body>
 </html>
