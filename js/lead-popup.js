@@ -69,6 +69,11 @@
     var endpoint = form.getAttribute('data-endpoint');
     var email = emailInput.value.trim();
     if (!email) return;
+    if (form.website && form.website.value) {
+      form.reset();
+      status.textContent = 'You are on the list. Check your inbox for the guide.';
+      return;
+    }
 
     if (!endpoint) {
       status.textContent = 'Signup is not connected yet.';
@@ -76,17 +81,22 @@
     }
 
     status.textContent = 'Sending...';
-    fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, source: 'homepage-lead-magnet' })
-    }).then(function (res) {
-      if (!res.ok) throw new Error('bad status');
-      status.textContent = 'You are on the list. Check your inbox for the guide.';
-      form.reset();
-      markSeen();
-    }).catch(function () {
-      status.textContent = 'Something went wrong. Please try again.';
+    // GoHighLevel inbound webhooks don't send CORS headers, so post a "simple"
+    // form-encoded request in no-cors mode. The response is opaque; a network
+    // failure still rejects, which is what we treat as an error.
+    var body = new URLSearchParams({
+      email: email,
+      source: 'homepage-lead-magnet',
+      page: window.location.pathname,
+      tags: 'website-email-list'
     });
+    fetch(endpoint, { method: 'POST', mode: 'no-cors', body: body })
+      .then(function () {
+        status.textContent = 'You are on the list. Check your inbox for the guide.';
+        form.reset();
+        markSeen();
+      }).catch(function () {
+        status.textContent = 'Something went wrong. Please try again.';
+      });
   });
 })();

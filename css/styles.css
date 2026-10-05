@@ -1688,7 +1688,7 @@ body.blog .blog-body { padding-top: 22px; }
 .lead-magnet-img {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 560px;
   height: auto;
   margin: 28px auto 52px;
   border-radius: var(--radius-lg);
@@ -1819,6 +1819,48 @@ body.home .services-grid { grid-template-columns: repeat(2, 1fr); max-width: 100
 }
 body.home .about-split { grid-template-columns: 1fr; gap: 32px; }
 body.home .cta-section { padding: 72px 0; }
+
+
+/* Cookie notice */
+.cookie-bar {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1500;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--dark);
+  border: 1px solid rgba(125,167,194,0.3);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-lg);
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+}
+.cookie-bar p { flex: 1 1 260px; margin: 0; line-height: 1.5; }
+.cookie-bar a { color: var(--primary); text-decoration: underline; }
+.cookie-bar .btn { padding: 10px 22px; font-size: 13px; }
+
+/* Spam trap for signup forms */
+.lead-form .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* Readable secondary text on dark backgrounds */
+.trust-item { color: rgba(255,255,255,0.6); }
+.hero-proof-label, .scenario-desc { color: rgba(255,255,255,0.72); }
+.cta-note, .lead-fine { color: rgba(255,255,255,0.65); }
+.footer-bottom-links a { color: rgba(255,255,255,0.6); }
+.vsl-caption { color: rgba(255,255,255,0.72); }
+
+/* Featured blog card */
+@media (max-width: 768px) {
+  .featured-card { grid-template-columns: 1fr !important; }
+  .featured-card > div:last-child { padding: 28px 24px !important; }
+}
 
 /* ============================================================
    RESPONSIVE

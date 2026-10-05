@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Hidden Gems Financial</title>
   <meta name="description" content="Financial education that actually educates. Infinite Banking, tax strategy, IUL vs Whole Life, and more from Wayne Carr." />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog | Hidden Gems Financial" />
+  <meta property="og:description" content="Financial education that actually educates. Infinite Banking, tax strategy, IUL vs Whole Life, and more from Wayne Carr." />
+  <meta property="og:url" content="https://hg-hiddengemsfinancial-redesign.vercel.app/blog.html" />
+  <meta property="og:image" content="https://hg-hiddengemsfinancial-redesign.vercel.app/img/lead-magnet-own-bank.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="blog">
@@ -65,9 +72,9 @@
   <section class="section section--light">
     <div class="container">
       <span class="eyebrow">Featured</span>
-      <div style="background: var(--white); border: 1px solid rgba(125,167,194,0.18); border-radius: var(--radius-lg); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 0; box-shadow: var(--shadow);">
+      <div class="featured-card" style="background: var(--white); border: 1px solid rgba(125,167,194,0.18); border-radius: var(--radius-lg); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 0; box-shadow: var(--shadow);">
         <div style="overflow: hidden; border-radius: var(--radius-lg) 0 0 var(--radius-lg);">
-          <img src="img/ibc-infographic.jpg" alt="How Infinite Banking Works" style="width: 100%; height: 100%; object-fit: cover;" />
+          <img src="img/ibc-cycle-infographic.jpg" alt="How Infinite Banking works: policy premiums and loan payments fund the policy, flexible policy loans fund major expenditures and opportunities, and cash flow from profits and income repays the loans" style="width: 100%; height: auto; object-fit: contain; background: #ffffff;" />
         </div>
         <div style="padding: 48px 40px; display: flex; flex-direction: column; justify-content: center;">
           <span class="eyebrow" style="margin-bottom: 12px;">IBC Education</span>
@@ -240,8 +247,8 @@
       <div class="footer-bottom">
         <span>&copy; 2026 Hidden Gems Financial. All rights reserved.</span>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -253,9 +260,10 @@
       <button type="button" class="lead-close" aria-label="Close" data-lead-close>&times;</button>
       <img class="lead-modal-thumb" src="img/lead-magnet-own-bank.png" alt="How To Be Your Own Bank guide" loading="lazy" />
       <span class="eyebrow">Free Guide</span>
-      <h3 id="leadTitle" class="lead-title">Your Money Should Work While You Live</h3>
-      <p class="lead-body">Join the list for financial literacy and benefits you can use for life, not just a death benefit. Start with How To Be Your Own Bank.</p>
+      <h3 id="leadTitle" class="lead-title">Your Money Has a Life. Not Just a Legacy.</h3>
+      <p class="lead-body">Join my email list for financial literacy and ways to maximize your financial capacity at every stage of life, not just talk about death benefits and legacy. Start with the free guide, How To Be Your Own Bank.</p>
       <form class="lead-form" id="leadForm" data-endpoint="">
+        <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <label class="visually-hidden" for="leadEmail">Email address</label>
         <input id="leadEmail" name="email" type="email" required placeholder="Your email address" autocomplete="email" />
         <button type="submit" class="btn btn-primary">Join the List</button>
@@ -267,5 +275,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/lead-popup.js"></script>
+  <script src="js/cookie-consent.js"></script>
 </body>
 </html>
