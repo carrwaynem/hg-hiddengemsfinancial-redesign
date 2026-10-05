@@ -16,8 +16,16 @@
         <img src="img/logo-blue.png" alt="Hidden Gems Financial" class="nav-logo-img" />
       </a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link nav-dropdown-toggle">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html#ibc" class="nav-dropdown-item">Infinite Banking</a>
+            <a href="services.html#trust" class="nav-dropdown-item">Trust Structures</a>
+            <a href="services.html#tax" class="nav-dropdown-item">Tax Mitigation</a>
+            <a href="services.html#business" class="nav-dropdown-item">Business Strategy</a>
+            <a href="services.html#use-cases" class="nav-dropdown-item">Use Cases</a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link active">Contact</a>
@@ -28,8 +36,14 @@
       </button>
     </div>
     <div class="nav-mobile" id="navMobile">
-      <a href="index.html" class="nav-link">Home</a>
       <a href="services.html" class="nav-link">Services</a>
+      <div class="nav-mobile-submenu">
+        <a href="services.html#ibc" class="nav-mobile-sublink">Infinite Banking</a>
+        <a href="services.html#trust" class="nav-mobile-sublink">Trust Structures</a>
+        <a href="services.html#tax" class="nav-mobile-sublink">Tax Mitigation</a>
+        <a href="services.html#business" class="nav-mobile-sublink">Business Strategy</a>
+        <a href="services.html#use-cases" class="nav-mobile-sublink">Use Cases</a>
+      </div>
       <a href="about.html" class="nav-link">About</a>
       <a href="blog.html" class="nav-link">Blog</a>
       <a href="contact.html" class="nav-link active">Contact</a>
@@ -54,10 +68,10 @@
 
         <div>
           <h2 class="booking-info-title">What to Expect</h2>
-          <p class="booking-info-text">This is a discovery call, not a sales call! We will map out your current situation and customize a strategy to put you on the path to your ideal financial ecosystem.</p>
+          <p class="booking-info-text">This is a discovery call, not a sales call. We will map out your current situation and customize a strategy to put you on the path to your ideal financial ecosystem.</p>
 
           <div class="booking-detail">
-            <div class="booking-detail-ico" aria-hidden="true">&#9203;</div>
+            <div class="booking-detail-ico" aria-hidden="true"><svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
             <div>
               <span class="booking-detail-label">Duration</span>
               <p class="booking-detail-text">No more than 30 minutes. Just enough time to determine if it's a good fit and answer your initial questions.</p>
@@ -65,7 +79,7 @@
           </div>
 
           <div class="booking-detail">
-            <div class="booking-detail-ico" aria-hidden="true">&#128176;</div>
+            <div class="booking-detail-ico" aria-hidden="true"><svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.3c0-1.3-1.3-2.1-3-2.1s-3 .7-3 2c0 2.7 6 1.4 6 4.1 0 1.3-1.3 2.1-3 2.1s-3-.8-3-2.1"/><path d="M12 6v2M12 16v2"/></svg></div>
             <div>
               <span class="booking-detail-label">Cost</span>
               <p class="booking-detail-text">Complimentary. No obligation. The conversation is the value, not a sales funnel.</p>
@@ -73,7 +87,7 @@
           </div>
 
           <div class="booking-detail">
-            <div class="booking-detail-ico" aria-hidden="true">&#128205;</div>
+            <div class="booking-detail-ico" aria-hidden="true"><svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s6.5-5.8 6.5-11A6.5 6.5 0 0 0 5.5 10c0 5.2 6.5 11 6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></div>
             <div>
               <span class="booking-detail-label">Format</span>
               <p class="booking-detail-text">Video call or phone at your preference. We will send you a pre education video to review beforehand so we can hit the ground running.</p>
@@ -81,7 +95,7 @@
           </div>
 
           <div class="booking-detail">
-            <div class="booking-detail-ico" aria-hidden="true">&#128203;</div>
+            <div class="booking-detail-ico" aria-hidden="true"><svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 11h6M9 15h6"/></svg></div>
             <div>
               <span class="booking-detail-label">Come Prepared With</span>
               <p class="booking-detail-text">A general sense of what you're trying to accomplish. No technical or financial expertise necessary. If there are examples, videos, concepts, structures, and/or ideologies please be prepared to share so that I may help you explore them and how they apply to you specifically.</p>
@@ -89,10 +103,10 @@
           </div>
 
           <div class="booking-detail">
-            <div class="booking-detail-ico" aria-hidden="true">&#129309;</div>
+            <div class="booking-detail-ico" aria-hidden="true"><svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l6-6"/><path d="M8 12l-2.5 2.5a3.5 3.5 0 0 0 5 5L13 17"/><path d="M16 12l2.5-2.5a3.5 3.5 0 0 0-5-5L11 7"/></svg></div>
             <div>
               <span class="booking-detail-label">The Only Requirement</span>
-              <p class="booking-detail-text">An open mind. The strategies we discuss are likely fundamentally different than what you've been told thus far. That's not an accident! If you are willing to think objectively about your situation, this conversation is for you. No jargon, no technical terms. Just a conversation rooted in common sense backed by centuries of application.</p>
+              <p class="booking-detail-text">An open mind. The strategies we discuss are likely fundamentally different than what you've been told thus far. That is not an accident. If you are willing to think objectively about your situation, this conversation is for you. No jargon, no technical terms. Just a conversation rooted in common sense backed by centuries of application.</p>
             </div>
           </div>
 
@@ -110,7 +124,7 @@
         <div>
           <div class="calendar-embed">
             <iframe
-              src="https://api.ecrofmediaco.com/widget/booking/4jE6yPD1SalXp9WLQhXo"
+              src="https://hg.hiddengemsfinancial.com/widget/bookings/hgf-get-acquainted"
               style="width:100%;height:640px;border:none;"
             ></iframe>
           </div>
@@ -127,17 +141,17 @@
       <h2 class="section-title">This Is a Different Kind of Financial Conversation</h2>
       <div class="diff-grid" style="margin-top: 40px;">
         <div class="diff-card">
-          <div class="diff-icon">&#127911;</div>
+          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="2.5" y="14" width="4" height="6" rx="1.5"/><rect x="17.5" y="14" width="4" height="6" rx="1.5"/></svg></div>
           <h3 class="diff-title">We Listen First</h3>
           <p class="diff-desc">The first call is almost entirely us asking questions. We need to understand your full picture before we say anything about strategy.</p>
         </div>
         <div class="diff-card">
-          <div class="diff-icon">&#128683;</div>
+          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div>
           <h3 class="diff-title">No High Pressure Close</h3>
           <p class="diff-desc">There is no "what would it take to get you started today?" moment. You will be given everything you need to make your own informed decision on your own timeline.</p>
         </div>
         <div class="diff-card">
-          <div class="diff-icon">&#128236;</div>
+          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
           <h3 class="diff-title">You Will Get a Written Overview</h3>
           <p class="diff-desc">After the first call, you receive a written summary of everything we discussed so you can review it, do your own diligence, and come to meeting two with questions.</p>
         </div>
@@ -155,9 +169,9 @@
           </a>
           <p class="footer-tagline">Bespoke financial strategies anchored in Infinite Banking. Built to maximize cash flow, protect assets, and grow wealth tax free.</p>
           <div class="footer-socials">
-            <a href="https://instagram.com/hiddengems_financial" class="social-btn" aria-label="Instagram">&#128247;</a>
-            <a href="https://facebook.com" class="social-btn" aria-label="Facebook">&#128216;</a>
-            <a href="https://youtube.com" class="social-btn" aria-label="YouTube">&#9654;</a>
+            <a href="https://instagram.com/hiddengems_financial" class="social-btn" aria-label="Instagram"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5h3l.5-3.5h-3.5V7.8c0-.9.3-1.5 1.6-1.5H15V3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com" class="social-btn" aria-label="YouTube"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.3l6 2.7-6 2.7z" fill="currentColor" stroke="none"/></svg></a>
           </div>
         </div>
         <div>
