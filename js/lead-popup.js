@@ -5,7 +5,7 @@
   var form = document.getElementById('leadForm');
   var emailInput = document.getElementById('leadEmail');
   var status = document.getElementById('leadStatus');
-  var IDLE_MS = 10000;
+  var IDLE_MS = 30000;
   var SCROLL_PX = 400;
   var STORAGE_KEY = 'hg_lead_seen';
   var idleTimer = null;
@@ -45,6 +45,8 @@
   window.addEventListener('scroll', function () {
     if (window.scrollY > SCROLL_PX) open();
   }, { passive: true });
+
+  document.addEventListener('hg:open-lead', open);
 
   resetIdle();
 

@@ -10,6 +10,7 @@
   <meta property="og:title" content="Book A Strategy Call | Hidden Gems Financial" />
   <meta property="og:description" content="Book a complimentary discovery call with Wayne Carr. A full cash flow conversation. No pitch, no pressure." />
   <meta property="og:url" content="https://hg-hiddengemsfinancial-redesign.vercel.app/contact.html" />
+  <link rel="canonical" href="https://hg-hiddengemsfinancial-redesign.vercel.app/contact.html" />
   <meta property="og:image" content="https://hg-hiddengemsfinancial-redesign.vercel.app/img/lead-magnet-cash-flow-accelerator.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -20,7 +21,7 @@
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Hidden Gems Financial Home">
-        <img src="img/logo-blue.png" alt="Hidden Gems Financial" class="nav-logo-img" />
+        <img src="img/logo-silver-trimmed.png" alt="Hidden Gems Financial" class="nav-logo-img" />
       </a>
       <div class="nav-links">
         <div class="nav-dropdown">
@@ -141,6 +142,51 @@
     </div>
   </section>
 
+  <!-- SEND A MESSAGE -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="tc" style="max-width: 640px; margin: 0 auto 48px;">
+        <span class="eyebrow">Other Ways to Reach Out</span>
+        <h2 class="section-title">Send a Message Instead</h2>
+        <p class="section-sub" style="margin: 0 auto;">Not ready to grab a time on the calendar? Tell us what you need and we will follow up personally.</p>
+      </div>
+      <form class="contact-form" id="contactForm" data-endpoint="https://services.leadconnectorhq.com/hooks/VAzLM9UQAimhEsqIbaoE/webhook-trigger/odSAVzyp9YzTYjsuKKSm">
+        <input class="hp-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="contact-form-row">
+          <div class="contact-form-field">
+            <label for="contactName">Full name</label>
+            <input id="contactName" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="contact-form-field">
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="contact-form-row">
+          <div class="contact-form-field">
+            <label for="contactPhone">Phone <span class="contact-form-optional">(optional)</span></label>
+            <input id="contactPhone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="contact-form-field">
+            <label for="contactReason">What can we help with?</label>
+            <select id="contactReason" name="reason" required>
+              <option value="" disabled selected>Choose one</option>
+              <option value="Request a Call Back">Request a call back</option>
+              <option value="Submit a Question">Submit a question</option>
+              <option value="Request More Information">Request more information</option>
+            </select>
+          </div>
+        </div>
+        <div class="contact-form-field">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        <p class="contact-form-status" id="contactStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
   <!-- REASSURANCE -->
   <section class="section section--light">
     <div class="container tc">
@@ -148,19 +194,34 @@
       <h2 class="section-title">This Is a Different Kind of Financial Conversation</h2>
       <div class="diff-grid" style="margin-top: 40px;">
         <div class="diff-card">
-          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="2.5" y="14" width="4" height="6" rx="1.5"/><rect x="17.5" y="14" width="4" height="6" rx="1.5"/></svg></div>
-          <h3 class="diff-title">We Listen First</h3>
-          <p class="diff-desc">The first call is almost entirely us asking questions. We need to understand your full picture before we say anything about strategy.</p>
+          <div class="diff-photo">
+            <img src="img/diff-listen-2.jpg" alt="Advisor closely reviewing tax documents with a client" loading="lazy" />
+            <span class="diff-num" aria-hidden="true">01</span>
+          </div>
+          <div class="diff-body">
+            <h3 class="diff-title">We Listen First</h3>
+            <p class="diff-desc">The first call is almost entirely us asking questions. We need to understand your full picture before we say anything about strategy.</p>
+          </div>
         </div>
         <div class="diff-card">
-          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div>
-          <h3 class="diff-title">No High Pressure Close</h3>
-          <p class="diff-desc">There is no "what would it take to get you started today?" moment. You will be given everything you need to make your own informed decision on your own timeline.</p>
+          <div class="diff-photo">
+            <img src="img/diff-pressure.jpg" alt="Advisor and clients having a relaxed, friendly conversation with no sales pressure" loading="lazy" />
+            <span class="diff-num" aria-hidden="true">02</span>
+          </div>
+          <div class="diff-body">
+            <h3 class="diff-title">No High Pressure Close</h3>
+            <p class="diff-desc">There is no "what would it take to get you started today?" moment. You will be given everything you need to make your own informed decision on your own timeline.</p>
+          </div>
         </div>
         <div class="diff-card">
-          <div class="diff-icon"><svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-          <h3 class="diff-title">You Will Get a Written Overview</h3>
-          <p class="diff-desc">After the first call, you receive a written summary of everything we discussed so you can review it, do your own diligence, and come to meeting two with questions.</p>
+          <div class="diff-photo">
+            <img src="img/diff-overview.jpg" alt="Hands reviewing a printed written summary with charts" loading="lazy" />
+            <span class="diff-num" aria-hidden="true">03</span>
+          </div>
+          <div class="diff-body">
+            <h3 class="diff-title">You Will Get a Written Overview</h3>
+            <p class="diff-desc">After the first call, you receive a written summary of everything we discussed so you can review it, do your own diligence, and come to meeting two with questions.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -172,13 +233,13 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" style="margin-bottom: 18px; display: inline-block;">
-            <img src="img/logo-blue.png" alt="Hidden Gems Financial" class="nav-logo-img" />
+            <img src="img/logo-silver-trimmed.png" alt="Hidden Gems Financial" class="nav-logo-img" />
           </a>
           <p class="footer-tagline">Bespoke financial strategies anchored in Infinite Banking. Built to maximize cash flow, protect assets, and grow wealth tax free.</p>
           <div class="footer-socials">
             <a href="https://instagram.com/hiddengems_financial" class="social-btn" aria-label="Instagram"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-            <a href="https://facebook.com" class="social-btn" aria-label="Facebook"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5h3l.5-3.5h-3.5V7.8c0-.9.3-1.5 1.6-1.5H15V3z" fill="currentColor" stroke="none"/></svg></a>
-            <a href="https://youtube.com" class="social-btn" aria-label="YouTube"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.3l6 2.7-6 2.7z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/hiddengemsfinancial/" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5h3l.5-3.5h-3.5V7.8c0-.9.3-1.5 1.6-1.5H15V3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.youtube.com/@hiddengemsfinancial" class="social-btn" aria-label="YouTube" target="_blank" rel="noopener"><svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.3l6 2.7-6 2.7z" fill="currentColor" stroke="none"/></svg></a>
           </div>
         </div>
         <div>
@@ -203,8 +264,8 @@
           <div class="footer-col-head">Connect</div>
           <ul class="footer-links">
             <li><a href="https://instagram.com/hiddengems_financial">@hiddengems_financial</a></li>
-            <li><a href="https://instagram.com/wayneruns">@Wayneruns</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+18135632322">(813) 563-2322</a></li>
+            <li><a href="mailto:info@hiddengemsfinancial.com">info@hiddengemsfinancial.com</a></li>
           </ul>
         </div>
       </div>
@@ -240,5 +301,6 @@
   <script src="js/main.js"></script>
   <script src="js/lead-popup.js"></script>
   <script src="js/cookie-consent.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 </html>
