@@ -7,6 +7,18 @@
     { "source": "/privacy", "destination": "/privacy.html", "permanent": true },
     { "source": "/blog", "destination": "/blog.html", "permanent": true },
     { "source": "/how-does-it-work", "destination": "/how-does-it-work.html", "permanent": true },
-    { "source": "/strategy-session", "destination": "/strategy-session.html", "permanent": true }
+    { "source": "/strategy-session", "destination": "/strategy-session.html", "permanent": true },
+    { "source": "/about-us", "destination": "/about.html", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/home-page", "destination": "/", "permanent": true },
+    { "source": "/strategy", "destination": "/strategy-session.html", "permanent": true },
+    { "source": "/guide", "destination": "/strategy-session.html", "permanent": true },
+    { "source": "/get-my-cash-flow-accelerator-guide", "destination": "/strategy-session.html", "permanent": true },
+    { "source": "/thank-you-8277", "destination": "/contact.html", "permanent": true },
+    { "source": "/mortgage-protection", "destination": "/services.html", "permanent": true },
+    { "source": "/need-help-finding-the-money", "destination": "/services.html", "permanent": true },
+    { "source": "/hidden-gems-financial-annuity", "destination": "/services.html", "permanent": true },
+    { "source": "/retirement-training", "destination": "/services.html", "permanent": true },
+    { "source": "/services/:slug", "destination": "/services.html", "permanent": true }
   ]
 }
