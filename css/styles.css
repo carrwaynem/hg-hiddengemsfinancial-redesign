@@ -922,6 +922,14 @@ ul { list-style: none; }
   padding: 6px 14px;
   border-radius: 100px;
   border: 1px solid rgba(125,167,194,0.22);
+  display: inline-block;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+a.tag:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
 }
 
 /* ============================================================
