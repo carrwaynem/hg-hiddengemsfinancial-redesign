@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hg-hiddengemsfinancial-redesign.vercel.app/sitemap.xml
+Sitemap: https://www.hiddengemsfinancial.com/sitemap.xml

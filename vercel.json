@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/about", "destination": "/about.html", "permanent": true },
+    { "source": "/contact", "destination": "/contact.html", "permanent": true },
+    { "source": "/services", "destination": "/services.html", "permanent": true },
+    { "source": "/terms", "destination": "/terms.html", "permanent": true },
+    { "source": "/privacy", "destination": "/privacy.html", "permanent": true },
+    { "source": "/blog", "destination": "/blog.html", "permanent": true },
+    { "source": "/how-does-it-work", "destination": "/how-does-it-work.html", "permanent": true },
+    { "source": "/strategy-session", "destination": "/strategy-session.html", "permanent": true }
+  ]
+}

@@ -1413,7 +1413,7 @@ a.tag:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 56px;
-  align-items: start;
+  align-items: center;
 }
 .booking-info-title {
   font-family: var(--font-head);
