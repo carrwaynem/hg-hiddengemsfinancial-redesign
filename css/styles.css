@@ -1073,6 +1073,14 @@ a.tag:hover {
   max-width: 270px;
   margin-bottom: 28px;
 }
+.footer-disclaimer {
+  font-size: 11px;
+  line-height: 1.6;
+  max-width: 280px;
+  color: rgba(255,255,255,0.4);
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
 .footer-socials { display: flex; gap: 10px; }
 .social-btn {
   width: 38px;
