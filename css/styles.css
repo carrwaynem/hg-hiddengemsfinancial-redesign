@@ -1793,6 +1793,8 @@ body.blog .blog-body { padding-top: 22px; }
   max-width: 720px;
   aspect-ratio: 16 / 9;
   margin: 36px auto 12px;
+  padding: 0;
+  font: inherit;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(125,167,194,0.25);
   background: rgba(255,255,255,0.04);
@@ -2000,6 +2002,40 @@ body.home .cta-section { padding: 72px 0; }
 }
 @media (max-width: 640px) {
   .video-embed { max-width: 280px; }
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(8,20,36,0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px 32px;
+}
+.video-modal[hidden] { display: none; }
+.video-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: calc(100vh - 88px);
+}
+.video-modal-card .video-embed-frame { width: 100%; max-width: none; margin: 0; }
+.video-modal-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .video-modal-card { max-width: 280px; }
+  .video-modal-close { top: -40px; }
 }
 
 
