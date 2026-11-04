@@ -33,7 +33,7 @@
     player = new YT.Player('ytPlayerTarget', {
       videoId: videoId,
       host: 'https://www.youtube-nocookie.com',
-      playerVars: { rel: 0, modestbranding: 1 },
+      playerVars: { rel: 0, modestbranding: 1, cc_load_policy: 0 },
       events: { onStateChange: onStateChange }
     });
   }
