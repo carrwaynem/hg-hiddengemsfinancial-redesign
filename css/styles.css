@@ -1835,6 +1835,16 @@ body.blog .blog-body { padding-top: 22px; }
   border: 0;
   display: block;
 }
+/* The landscape welcome video has thin black pillarbox bars baked into the
+   source file (the actual video frame isn't true 16:9, so the YouTube
+   player pads it). Keep the iframe at its native 16:9 so the player
+   doesn't re-letterbox, then uniformly zoom the whole rendered frame and
+   let the container's overflow:hidden clip the bars off. Portrait clip
+   has no bars, so it's left alone. */
+.vsl.is-playing:not(.is-portrait) iframe {
+  transform: scale(1.13);
+  transform-origin: center center;
+}
 .vsl-inner {
   display: flex;
   flex-direction: column;
