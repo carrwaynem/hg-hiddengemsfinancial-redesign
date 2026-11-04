@@ -1791,7 +1791,7 @@ body.blog .blog-body { padding-top: 22px; }
 .vsl {
   position: relative;
   width: 100%;
-  max-width: 720px;
+  max-width: 480px;
   aspect-ratio: 16 / 9;
   margin: 36px auto 12px;
   border-radius: var(--radius-lg);
@@ -1813,7 +1813,6 @@ body.blog .blog-body { padding-top: 22px; }
 }
 .vsl.is-portrait {
   aspect-ratio: 9 / 16;
-  max-width: 320px;
 }
 .vsl-trigger {
   width: 100%;
@@ -2030,6 +2029,7 @@ body.home .cta-section { padding: 72px 0; }
 }
 @media (max-width: 640px) {
   .video-embed { max-width: 280px; }
+  .vsl { max-width: 280px; }
 }
 
 
