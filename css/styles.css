@@ -1635,10 +1635,6 @@ a.tag:hover {
 /* ============================================================
    BLOG PAGE — card refinements (scoped to body.blog)
    ============================================================ */
-body.blog .blog-thumb {
-  height: 5px;
-  background: linear-gradient(90deg, var(--primary), var(--cta));
-}
 body.blog .blog-body { padding-top: 22px; }
 
 /* ============================================================
